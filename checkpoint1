@@ -1,0 +1,32 @@
+print("****BIENVENUE CHEZ PYTHON PIZZA DELIVERIES****")
+
+taille = input("Quelle est la taille de la pizza que vous souhaitez ? ")
+
+add_pepperoni = input("Voulez-vous du pepperoni sur votre pizza  ? ")
+
+extra_cheese = input("Voulez-vous du fromage supplémentaire sur votre pizza  ? ")
+
+
+if taille == "Petite_pizza":
+    prix = 15
+    if add_pepperoni == "oui":
+        prix += 2
+    else:
+        prix += 0
+elif taille  == "Moyenne_pizza":
+    prix = 20
+    if add_pepperoni  == "oui":
+        prix += 3
+    else:
+        prix += 0
+elif taille  == "Grande_pizza":
+    prix = 25
+    if add_pepperoni  == "oui":
+        prix += 3
+    else:
+        prix += 0
+
+if extra_cheese  == "oui":
+    prix += 1
+
+print(f"Votre facture finale est de : {prix} $")
